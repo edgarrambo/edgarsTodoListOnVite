@@ -1,20 +1,21 @@
 <script setup>
 import useTodos from '../composables/useTodos';
+
 const { pending, completed, changeStatus} = useTodos();
 
 defineProps ({
-    isCompleted:{
+    isCompleted: {
     default: false,
     type: Boolean,
     },
 });
-
 </script>
+
 <template>
     <div class="w-1/3">
         <h3 class="text-2xl font-extrabold text-center text-black underline" 
         :class="isCompleted ? 'text-green-400' : 'text-blue-400'"
-        > {{ isCompleted ? "Completed" : "Pending" }}</h3>
+        > {{ isCompleted ? "Completed" : "Pending" }} </h3>
         <ul class="pt-8 space-y-4">
             <li 
             v-for="todo in isCompleted ? completed : pending"

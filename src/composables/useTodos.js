@@ -1,4 +1,5 @@
 import { ref, computed } from "vue";
+const todos = ref([]);
 
 const useTodos = () => {
   const pending = computed(() => {
@@ -27,7 +28,7 @@ const useTodos = () => {
     todos,
     pending,
     completed,
-    addTo,
+    addTodo,
     changeStatus,
   };
 };

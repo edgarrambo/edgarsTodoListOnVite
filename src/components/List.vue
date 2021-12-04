@@ -25,7 +25,7 @@ defineProps ({
             ? 'text-green-600 hover:bg-green-400'
             : 'text-blue-600 hover:bg-blue-400' 
             " 
-            class="w-full px-4 py-2 font-bold text-center text-blue-800 transition-colors duration-200 bg-blue-200 rounded-lg hover:cursor-pointer hover:bg-yellow-500 hover:text-black">{{todo.content }}</li>
+            class="w-full px-4 py-2 font-bold text-center text-blue-800 transition-colors duration-200 bg-blue-200 rounded-lg hover:cursor-pointer hover:bg-yellow-500 hover:text-black">{{todo.text }}</li>
         </ul>
     </div>
 </template>
